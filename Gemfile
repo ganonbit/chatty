@@ -23,7 +23,7 @@ gem 'uglifier', '>= 1.3.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker'
 # Use devise for authenication
-gem 'devise', git: 'git@github.com:plataformatec/devise.git'
+gem 'devise', git: 'https://github.com/plataformatec/devise'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 3.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
