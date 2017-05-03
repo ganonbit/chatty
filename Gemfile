@@ -32,6 +32,8 @@ gem 'redis', '~> 3.2'
 gem "paperclip", "~> 5.0.0"
 #Use aws for file hosting
 gem 'aws-sdk', '~> 2'
+#Use simple_form for Simple Forms ;)
+gem 'simple_form'
 
 #jquery since they use it in the example >_>
 gem 'jquery-rails'
