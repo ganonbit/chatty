@@ -28,6 +28,10 @@ gem 'devise', git: 'https://github.com/plataformatec/devise'
 gem 'redis', '~> 3.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+# Use paperclip for file uploads
+gem "paperclip", "~> 5.0.0"
+#Use aws for file hosting
+gem 'aws-sdk', '~> 2'
 
 #jquery since they use it in the example >_>
 gem 'jquery-rails'
