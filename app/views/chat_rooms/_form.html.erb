@@ -1,0 +1,40 @@
+<div class="text-center">
+<%= form_for(@stream_message, multipart: true) do |f| %>
+  <% if @stream_message.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@stream_message.errors.count, "error") %> prohibited this stream_message from being saved:</h2>
+
+      <ul>
+      <% @stream_message.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="col-md-6">
+
+    <div class="field form-group">
+      <%= f.label :body %><br>
+      <%= f.text_area :body, :class => 'tinymce form-control' %>
+      <%= tinymce %>
+    </div>
+
+    <div class="field form-group">
+      <%= f.label :active %><br>
+      <%= f.check_box :active %>
+    </div>
+
+  </div>
+
+  <div class="col-md-12">
+    <div class="actions form-group">
+      <% if @stream_message.new_record? %>
+        <%= link_to "Cancel", stream_messages_path, class: 'btn btn-danger' %>
+      <% else %>
+        <%= link_to "Cancel", stream_message_path(@stream_message), class: 'btn btn-danger' %>
+      <% end %>
+      <%= f.submit :class => 'btn btn-success' %>
+    </div>
+  </div>
+<% end %>
+</div>
